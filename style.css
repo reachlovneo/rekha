@@ -1,0 +1,31 @@
+:root {
+  --bg: #0c0e24; --panel: #15183a; --ink: #eef1ff; --muted: #a7b0d8; --accent: #8fa8ff; --line: #262a55;
+  --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body: "Figtree", "Segoe UI", system-ui, sans-serif;
+}
+* { box-sizing: border-box; }
+html { color-scheme: dark; }
+body { margin: 0; background: radial-gradient(1200px 600px at 75% -10%, #2a2380 0%, var(--bg) 60%) fixed, var(--bg);
+  color: var(--ink); font: 17px/1.65 var(--body); }
+.wrap { max-width: 860px; margin: 0 auto; padding: 32px max(20px, env(safe-area-inset-left)) 64px; }
+header.top { display: flex; align-items: center; gap: 14px; }
+header.top img { width: 44px; height: 44px; border-radius: 10px; }
+header.top a.brand { font: 800 26px/1 var(--display); color: var(--ink); text-decoration: none; letter-spacing: -0.01em; }
+nav { margin-left: auto; display: flex; gap: 18px; flex-wrap: wrap; }
+nav a { color: var(--muted); text-decoration: none; font-weight: 600; }
+nav a:hover, nav a:focus-visible { color: var(--ink); }
+.hero { margin: 36px 0 28px; border-radius: 18px; overflow: hidden; border: 1px solid var(--line); }
+.hero img { display: block; width: 100%; height: auto; }
+h1, h2 { font-family: var(--display); line-height: 1.1; text-wrap: balance; }
+h1 { font-size: clamp(32px, 6vw, 52px); margin: 28px 0 8px; }
+h2 { font-size: 26px; margin: 36px 0 8px; }
+p, li { color: #d7dcf5; }
+.lede { font-size: 20px; color: var(--muted); max-width: 60ch; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; margin-top: 18px; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; }
+.card b { display: block; font-family: var(--display); font-size: 19px; margin-bottom: 4px; color: var(--ink); }
+.card p { margin: 0; font-size: 15px; color: var(--muted); }
+a { color: var(--accent); }
+.meta { color: var(--muted); font-size: 15px; }
+footer { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; display: flex; gap: 18px; flex-wrap: wrap; }
+footer a { color: var(--muted); }
